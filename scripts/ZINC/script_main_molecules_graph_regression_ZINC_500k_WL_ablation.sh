@@ -21,12 +21,6 @@ dataset=ZINC
 tmux new -s screen_GT -d
 tmux send-keys "source activate graph_transformer" C-m
 tmux send-keys "
-python $code --dataset $dataset --gpu_id 0 --seed $seed0 --config 'configs/ablation_molecules_GraphTransformer_LapPE_WLPE_ZINC_500k_sparse_graph_BN.json' &
-python $code --dataset $dataset --gpu_id 1 --seed $seed1 --config 'configs/ablation_molecules_GraphTransformer_LapPE_WLPE_ZINC_500k_sparse_graph_BN.json' &
-python $code --dataset $dataset --gpu_id 2 --seed $seed2 --config 'configs/ablation_molecules_GraphTransformer_LapPE_WLPE_ZINC_500k_sparse_graph_BN.json' &
-python $code --dataset $dataset --gpu_id 3 --seed $seed3 --config 'configs/ablation_molecules_GraphTransformer_LapPE_WLPE_ZINC_500k_sparse_graph_BN.json' &
-wait" C-m
-tmux send-keys "
 python $code --dataset $dataset --gpu_id 0 --seed $seed0 --config 'configs/ablation_molecules_GraphTransformer_WLPE_ZINC_500k_sparse_graph_BN.json' &
 python $code --dataset $dataset --gpu_id 1 --seed $seed1 --config 'configs/ablation_molecules_GraphTransformer_WLPE_ZINC_500k_sparse_graph_BN.json' &
 python $code --dataset $dataset --gpu_id 2 --seed $seed2 --config 'configs/ablation_molecules_GraphTransformer_WLPE_ZINC_500k_sparse_graph_BN.json' &
