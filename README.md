@@ -45,17 +45,14 @@ This project is based on the [benchmarking-gnns](https://github.com/graphdeeplea
 
 ## 4. Reference 
 
-Coming soon!
-
-<!-- ```
-@article{dwivedi2020graph,
+```
+@article{dwivedi2021generalization,
   title={A Generalization of Transformer Networks to Graphs},
   author={Dwivedi, Vijay Prakash and and Bresson, Xavier},
-  journal={arXiv preprint arXiv:2012.xxxxx},
-  year={2020}
+  journal={AAAI Workshop on Deep Learning on Graphs: Methods and Applications},
+  year={2021}
 }
 ```
--->
 
 
 <br><br><br>
