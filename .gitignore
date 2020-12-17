@@ -1,0 +1,38 @@
+#common
+**/*.DS_Store
+**/*.ipynb_checkpoints/
+**/__pycache__
+out/
+
+gmail.py
+
+#SBM datasets
+data/SBMs/*.pkl
+
+#Superpixels datasets
+data/superpixels/*.pkl
+data/superpixels/*.zip
+PATH/
+
+#ZINC dataset
+data/molecules/*.pkl
+data/molecules/*.pickle
+data/molecules/*.zip
+data/molecules/zinc-full/*.pkl
+
+#TSP
+data/TSP/*.txt
+data/TSP/*.pkl
+data/TSP/*.zip
+data/TSP/pyconcorde/
+
+#COLLAB
+data/COLLAB/*
+dataset/
+
+#CSL
+data/CSL/*.pkl
+data/CSL/*.zip
+data/CSL/*.pt
+
+

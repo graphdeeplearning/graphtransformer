@@ -1,0 +1,42 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "GraphTransformer",
+    "dataset": "SBM_PATTERN",
+    
+    "out_dir": "out/SBMs_sparse_LapPE_LN/",
+    
+    "params": {
+        "seed": 41,
+        "epochs": 1000,
+        "batch_size": 26,
+        "init_lr": 0.0005,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 10,
+        "min_lr": 1e-6,
+        "weight_decay": 0.0,
+        "print_epoch_interval": 5,
+        "max_time": 24
+    },
+    
+    "net_params": {
+        "L": 10,
+        "n_heads": 8,
+        "hidden_dim": 80,
+        "out_dim": 80,
+        "residual": true,
+        "readout": "mean",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.0,
+        "layer_norm": true,
+        "batch_norm": false,
+        "self_loop": false,
+        "lap_pos_enc": true,
+        "pos_enc_dim": 2,
+        "wl_pos_enc": false,
+        "full_graph": false
+    }
+}
