@@ -239,7 +239,7 @@ class MoleculeDataset(torch.utils.data.Dataset):
 
     def __init__(self, name):
         """
-            Loading SBM datasets
+            Loading ZINC dataset
         """
         start = time.time()
         print("[I] Loading dataset %s..." % (name))
