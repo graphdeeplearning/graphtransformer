@@ -8,7 +8,6 @@ import math
 
 from train.metrics import MAE
 
-
 def train_epoch(model, optimizer, device, data_loader, epoch):
     model.train()
     epoch_loss = 0
