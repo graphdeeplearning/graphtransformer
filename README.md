@@ -2,7 +2,7 @@
 
 # Graph Transformer Architecture
 
-Source code for the paper "**A Generalization of Transformer Networks to Graphs**" by _[Vijay Prakash Dwivedi](https://github.com/vijaydwivedi75) and [Xavier Bresson](https://github.com/xbresson)_, at **AAAI'21 Workshop on Deep Learning on Graphs: Methods and Applications (DLG-AAAI'21)**.
+Source code for the paper "**[A Generalization of Transformer Networks to Graphs](https://arxiv.org/abs/2012.09699)**" by _[Vijay Prakash Dwivedi](https://github.com/vijaydwivedi75) and [Xavier Bresson](https://github.com/xbresson)_, at **AAAI'21 Workshop on Deep Learning on Graphs: Methods and Applications (DLG-AAAI'21)**.
 
 We propose a generalization of transformer neural network architecture for arbitrary graphs: **Graph Transformer**. <br>Compared to the [Standard Transformer](https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf), the highlights of the presented architecture are: 
 
@@ -45,6 +45,7 @@ This project is based on the [benchmarking-gnns](https://github.com/graphdeeplea
 
 ## 4. Reference 
 
+[Paper on arXiv](https://arxiv.org/abs/2012.09699)
 ```
 @article{dwivedi2021generalization,
   title={A Generalization of Transformer Networks to Graphs},
