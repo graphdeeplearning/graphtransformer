@@ -14,12 +14,6 @@ import numpy as np
 import networkx as nx
 import hashlib
 
-# *NOTE
-# The dataset pickle and index files are in ./zinc_molecules/ dir
-# [<split>.pickle and <split>.index; for split 'train', 'val' and 'test']
-
-
-
 
 class MoleculeDGL(torch.utils.data.Dataset):
     def __init__(self, data_dir, split, num_graphs=None):
@@ -156,6 +150,17 @@ def make_full_graph(g):
     full_g = dgl.from_networkx(nx.complete_graph(g.number_of_nodes()))
     full_g.ndata['feat'] = g.ndata['feat']
     full_g.edata['feat'] = torch.zeros(full_g.number_of_edges()).long()
+    
+    try:
+        full_g.ndata['lap_pos_enc'] = g.ndata['lap_pos_enc']
+    except:
+        pass
+
+    try:
+        full_g.ndata['wl_pos_enc'] = g.ndata['wl_pos_enc']
+    except:
+        pass    
+    
     return full_g
 
 
