@@ -87,11 +87,6 @@ def train_val_pipeline(MODEL_NAME, dataset, params, net_params, dirs):
     
     DATASET_NAME = dataset.name
     
-    if net_params['full_graph']:
-        print("[!] Converting the given graphs to full graphs..")
-        dataset._make_full_graph()
-        print('Time taken to convert to full graphs:',time.time()-start0)
-    
     if net_params['lap_pos_enc']:
         st = time.time()
         print("[!] Adding Laplacian positional encoding.")
@@ -103,6 +98,12 @@ def train_val_pipeline(MODEL_NAME, dataset, params, net_params, dirs):
         print("[!] Adding WL positional encoding.")
         dataset._add_wl_positional_encodings()
         print('Time WL PE:',time.time()-st)
+    
+    if net_params['full_graph']:
+        st = time.time()
+        print("[!] Converting the given graphs to full graphs..")
+        dataset._make_full_graph()
+        print('Time taken to convert to full graphs:',time.time()-st)
         
     trainset, valset, testset = dataset.train, dataset.val, dataset.test
         
