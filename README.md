@@ -45,7 +45,9 @@ This project is based on the [benchmarking-gnns](https://github.com/graphdeeplea
 
 ## 4. Reference 
 
-[Paper on arXiv](https://arxiv.org/abs/2012.09699)
+:page_with_curl: Paper [on arXiv](https://arxiv.org/abs/2012.09699)
+:pencil: Blog [on Towards Data Science](https://towardsdatascience.com/graph-transformer-generalization-of-transformers-to-graphs-ead2448cff8b)
+:movie_camera: Video [on YouTube](https://www.youtube.com/watch?v=h-_HNeBmaaU&t=237s)
 ```
 @article{dwivedi2021generalization,
   title={A Generalization of Transformer Networks to Graphs},
