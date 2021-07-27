@@ -13,7 +13,7 @@
 ```
 # Run the main file (at the root of the project)
 python main_molecules_graph_regression.py --config 'configs/molecules_GraphTransformer_LapPE_ZINC_500k_sparse_graph_BN.json' # for CPU
-python main_molecules_graph_regression.py --gpu_id 0 --config 'molecules_GraphTransformer_LapPE_ZINC_500k_sparse_graph_BN.json' # for GPU
+python main_molecules_graph_regression.py --gpu_id 0 --config 'configs/molecules_GraphTransformer_LapPE_ZINC_500k_sparse_graph_BN.json' # for GPU
 ```
 The training and network parameters for each experiment is stored in a json file in the [`configs/`](../configs) directory.
 
